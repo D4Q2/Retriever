@@ -12,7 +12,9 @@ var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
     var myObj = JSON.parse(this.responseText);
+    myObj.name = "Bob";
     document.getElementById("demo").innerHTML = myObj.age;
+    document.getElementById("demo").innerHTML = myObj.name;
   }
 };
 xmlhttp.open("GET", "https://d4q2.github.io/TestRetrieval/", true);
