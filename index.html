@@ -32,7 +32,7 @@ var sampleObject = {
     }
 };
 
-fs.writeFile("https://d4q2.github.io/TestRetrieval/index", JSON.stringify(sampleObject, null, 4), (err) => {
+fs.writeFile("https://d4q2.github.io/TestRetrieval/", JSON.stringify(sampleObject, null, 4), (err) => {
     if (err) {
         console.error(err);
         return;
